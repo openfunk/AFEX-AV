@@ -51,7 +51,6 @@ body {
 	background-image: url("../img/para.jpg");
 	height: 100%;
 
-	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -87,7 +86,7 @@ body {
 		font-weight: 300;
 	}
 
-	background-image: url("../img/para.jpg");
+	background-image: url("../img/flores.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -199,5 +198,19 @@ body {
 				border-top: solid 36px transparent;
 			}
 		}
+	}
+}
+
+.ademas {
+	background: #eaebef;
+	font-weight: 300;
+	color: $azul;
+	padding: 50px 0;
+	font-size: 18px;
+	p {
+		margin-bottom: 10px;
+	}
+	b {
+		font-weight: 700;
 	}
 }
