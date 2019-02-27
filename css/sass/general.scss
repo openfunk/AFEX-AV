@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i');
+
+
+body {
+	background: #EAEBEF;
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 138px;
+}
+
+.boton-yellow {
+	background: $amarillo;
+	color: white;
+	padding: 15px 25px;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 50px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
+	font-weight: 700;
+
+	&:hover {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.text-yellow {
+	color: $amarillo;
+}
+
+.breadcrumb {
+	padding: 0;
+	margin-bottom: 1rem;
+	list-style: none;
+	background-color: transparent;
+	border-radius: 0;
+	color: white;
+	font-size: 11px;
+	li {
+		&.active {
+			color: white;
+		}
+	}
+	a {
+		color: white;
+	}
+}
+
+.parallax {
+	background-image: url("../img/para.jpg");
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner-quieres {
+	position: relative;
+	color: white;
+	padding: 100px 0;
+	text-align: left;
+	overflow: hidden;
+
+	.rectangulo-giro {
+		position: absolute;
+		width: 500px;
+		height: 500px;
+		background-color: #ffe54a;
+		transform: rotate(135deg);
+		top: 30px;
+		left: -300px;
+	}
+
+	.container {
+		padding-left: 300px;
+	}
+
+	h2 {
+		font-weight: 700;
+	}
+	h5 {
+		margin-bottom: 50px;
+		font-weight: 300;
+	}
+
+	background-image: url("../img/para.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.hero-area {
+	background-image: url("../img/para.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.row {
+		h6 {
+			text-transform: uppercase;
+			color: white;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		h1 {
+			font-weight: 700;
+			color: white;
+			font-size: 40px;
+		}
+		h3 {
+			color: white;
+			margin-bottom: 30px;
+			font-weight: 300;
+			font-size: 25px;
+			line-height: 33px;
+		}
+
+		.hero-text {
+			padding-top: 100px;
+			padding-bottom: 50px;
+			padding-left: 60px;
+			padding-right: 60px;
+			background-color: rgba(39, 42, 94, 0.8);
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				right: -240px;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-left: 240px solid rgba(39, 42, 94, 0.8);
+				border-top: 0px solid transparent;
+				border-bottom: 700px solid transparent;
+				height: 100%;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				right: -90px;
+				bottom: 0;
+				width: 20px;
+				background-color: #ffdc4a;
+				height: 100%;
+				transform: skewX(-20deg);
+			}
+		}
+	}
+}
+
+.special-bread {
+	.col {
+		background: #eaebef;
+		color: $azul;
+		text-transform: uppercase;
+		font-size: 16px;
+		text-align: center;
+		padding: 25px 0px;
+		padding-left: 30px;
+		position: relative;
+		font-weight: 700;
+		overflow: hidden;
+		&.active {
+			background: $amarillo;
+			color: white;
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0px;
+				top: 0;
+				z-index: 13;
+				width: 0;
+				height: 74px;
+				border-left: solid 30px #eaebef;
+				border-bottom: solid 38px transparent;
+				border-top: solid 36px transparent;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				right: -30px;
+				top: 0;
+				z-index: 13;
+				width: 0;
+				height: 74px;
+				border-left: solid 30px $amarillo;
+				border-bottom: solid 38px transparent;
+				border-top: solid 36px transparent;
+			}
+		}
+	}
+}
