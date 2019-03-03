@@ -169,6 +169,35 @@ body {
   .ademas b {
     font-weight: 700; }
 
+#faq {
+  padding: 90px 0;
+  background: white; }
+
+.accordion {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 750px;
+  font-size: 18px;
+  color: #272B5B; }
+  .accordion .card {
+    margin-bottom: 15px;
+    -webkit-border-radius: 10px 0 10px 0;
+    border-radius: 10px 0 10px 0;
+    border: solid 1px #272B5B !important; }
+  .accordion .card-header {
+    background-color: white;
+    border-bottom: none; }
+    .accordion .card-header h5,
+    .accordion .card-header a,
+    .accordion .card-header .btn-link {
+      color: #272B5B;
+      font-size: 18px;
+      font-weight: 800; }
+  .accordion .card-body {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 300; }
+
 #carouselMini .carousel-mini-indicators {
   z-index: 15;
   display: -ms-flexbox;
@@ -289,6 +318,31 @@ body {
 
 .ultimas-noticias {
   padding: 150px 0; }
+  .ultimas-noticias .not-destacada {
+    background: white;
+    margin-bottom: 60px;
+    -webkit-border-radius: 15px 0 15px 0;
+    border-radius: 15px 0 15px 0;
+    color: #272B5B; }
+    .ultimas-noticias .not-destacada img {
+      max-width: 100%; }
+    .ultimas-noticias .not-destacada h3 {
+      color: #272B5B;
+      font-size: 25px;
+      font-weight: 700; }
+    .ultimas-noticias .not-destacada p {
+      font-size: 15px;
+      color: #272B5B;
+      line-height: 20px;
+      font-weight: 300; }
+    .ultimas-noticias .not-destacada .not-date {
+      color: white;
+      background: #272B5B;
+      padding: 10px 1.25rem;
+      font-size: 11px;
+      font-weight: 300; }
+    .ultimas-noticias .not-destacada .not-text {
+      padding: 20px 30px; }
   .ultimas-noticias h2 {
     display: block;
     margin: auto;
@@ -299,7 +353,9 @@ body {
     font-weight: 700; }
   .ultimas-noticias .card {
     -webkit-border-radius: 15px 0 15px 0;
-    border-radius: 15px 0 15px 0; }
+    border-radius: 15px 0 15px 0;
+    min-width: 250px;
+    margin-bottom: 50px; }
     .ultimas-noticias .card .card-img-top {
       border-top-left-radius: 15px;
       border-top-right-radius: 0; }
@@ -402,6 +458,91 @@ footer {
       text-decoration: underline;
       color: #272B5B; }
 
+.contacto-page {
+  background: white;
+  padding: 80px 0; }
+  .contacto-page h6 {
+    font-weight: 700;
+    font-size: 18px; }
+  .contacto-page p {
+    color: #9093a7;
+    font-size: 18px;
+    font-weight: 300; }
+    .contacto-page p b {
+      color: #ff204e; }
+  .contacto-page .contacto {
+    padding-right: 0;
+    color: #272B5B;
+    font-size: 15px;
+    font-weight: 300; }
+    .contacto-page .contacto ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+    .contacto-page .contacto h4 {
+      font-size: 30px;
+      color: #272B5B;
+      margin-bottom: 35px; }
+    .contacto-page .contacto a {
+      color: #272B5B; }
+    .contacto-page .contacto .fab {
+      font-size: 37px;
+      margin-left: 40px;
+      color: #272B5B; }
+    .contacto-page .contacto .fas {
+      margin-right: 10px; }
+
+#links {
+  background: white;
+  padding: 70px 0; }
+
+.links-interes a {
+  background: white;
+  color: #9093a7;
+  font-size: 18px;
+  border: solid 1px #9093a7;
+  padding: 8px 30px;
+  display: block;
+  margin-bottom: 20px; }
+  .links-interes a:hover {
+    background: #272B5B;
+    color: white;
+    text-decoration: none; }
+
+.noticia {
+  background: white;
+  padding: 100px 0; }
+  .noticia img {
+    width: 100%;
+    margin-bottom: 20px; }
+  .noticia .date {
+    color: white;
+    background: #272B5B;
+    padding: 10px 1.25rem;
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 40px; }
+  .noticia .noticia-text h3 {
+    color: #272B5B;
+    font-size: 25px;
+    font-weight: 700; }
+  .noticia .noticia-text h4 {
+    color: #272B5B;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: 700; }
+  .noticia .noticia-text p {
+    font-size: 15px;
+    color: #272B5B;
+    line-height: 22px;
+    font-weight: 300; }
+  .noticia .noticia-text .subtitulo {
+    color: #9093a7;
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 40px; }
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -468,6 +609,13 @@ footer {
 
 .dropdown-toggle::after {
   display: none; }
+
+input {
+  border: solid 1px #272B5B;
+  background: white;
+  color: #272B5B;
+  display: block;
+  width: 90%; }
 
 .intro-producto {
   background: white;

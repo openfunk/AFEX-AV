@@ -107,6 +107,37 @@
 
 .ultimas-noticias {
 	padding: 150px 0;
+	.not-destacada {
+		background: white;
+		margin-bottom: 60px;
+		-webkit-border-radius: 15px 0 15px 0;
+		border-radius: 15px 0 15px 0;
+		color: $azul;
+		img {
+			max-width: 100%;
+		}
+		h3 {
+			color: $azul;
+			font-size: 25px;
+			font-weight: 700;
+		}
+		p {
+			font-size: 15px;
+			color: $azul;
+			line-height: 20px;
+			font-weight: 300;
+		}
+		.not-date {
+			color: white;
+			background: $azul;
+			padding: 10px 1.25rem;
+			font-size: 11px;
+			font-weight: 300;
+		}
+		.not-text {
+			padding: 20px 30px;
+		}
+	}
 	h2 {
 		display: block;
 		margin: auto;
@@ -119,10 +150,13 @@
 	.card {
 		-webkit-border-radius: 15px 0 15px 0;
 		border-radius: 15px 0 15px 0;
+		min-width: 250px;
+		margin-bottom: 50px;
 		.card-img-top {
 			border-top-left-radius: 15px;
 			border-top-right-radius: 0;
 		}
+
 		.card-date {
 			color: white;
 			background: $azul;
@@ -255,6 +289,116 @@ footer {
 		a {
 			text-decoration: underline;
 			color: $azul;
+		}
+	}
+}
+
+.contacto-page {
+	background: white;
+	padding: 80px 0;
+	h6 {
+		font-weight: 700;
+		font-size: 18px;
+	}
+	p {
+		color: #9093a7;
+		font-size: 18px;
+		font-weight: 300;
+		b {
+			color: #ff204e;
+		}
+	}
+	.contacto {
+		padding-right: 0;
+		color: $azul;
+		font-size: 15px;
+		font-weight: 300;
+		ul {
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		h4 {
+			font-size: 30px;
+			color: $azul;
+			margin-bottom: 35px;
+		}
+		a {
+			color: $azul;
+		}
+		.fab {
+			font-size: 37px;
+			margin-left: 40px;
+			color: $azul;
+		}
+		.fas {
+			margin-right: 10px;
+		}
+	}
+}
+
+#links {
+	background: white;
+	padding: 70px 0;
+}
+
+.links-interes {
+	a {
+		background: white;
+		color: #9093a7;
+		font-size: 18px;
+		border: solid 1px #9093a7;
+		padding: 8px 30px;
+		display: block;
+		margin-bottom: 20px;
+		&:hover {
+			background: $azul;
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+.noticia {
+	background: white;
+	padding: 100px 0;
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.date {
+		color: white;
+		background: $azul;
+		padding: 10px 1.25rem;
+		font-size: 11px;
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
+	.noticia-text {
+		h3 {
+			color: $azul;
+			font-size: 25px;
+			font-weight: 700;
+		}
+		h4 {
+			color: $azul;
+			font-size: 19px;
+			margin-bottom: 20px;
+			margin-top: 10px;
+			font-weight: 700;
+		}
+		p {
+			font-size: 15px;
+			color: $azul;
+			line-height: 22px;
+			
+			font-weight: 300;
+		}
+		.subtitulo {
+			color: #9093a7;
+			font-style: italic;
+			font-size: 15px;
+			margin-bottom: 40px;
 		}
 	}
 }

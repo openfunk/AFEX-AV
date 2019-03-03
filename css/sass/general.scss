@@ -214,3 +214,38 @@ body {
 		font-weight: 700;
 	}
 }
+
+#faq {
+	padding: 90px 0;
+	background: white;
+}
+
+.accordion {
+	margin: 20px auto;
+	width: 80%;
+	max-width: 750px;
+	font-size: 18px;
+	color: $azul;
+	.card {
+		margin-bottom: 15px;
+		-webkit-border-radius: 10px 0 10px 0;
+		border-radius: 10px 0 10px 0;
+		border: solid 1px $azul !important;
+	}
+	.card-header {
+		background-color: white;
+		border-bottom: none;
+		h5,
+		a,
+		.btn-link {
+			color: $azul;
+			font-size: 18px;
+			font-weight: 800;
+		}
+	}
+	.card-body {
+		margin-bottom: 15px;
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
