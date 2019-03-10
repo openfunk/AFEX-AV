@@ -1,3 +1,11 @@
+.carousel {
+	max-height: 650px;
+
+	img {
+		max-height: 650px;
+	}
+}
+
 #carouselMini {
 	.carousel-mini-indicators {
 		//	position: absolute;
@@ -25,11 +33,13 @@
 			cursor: pointer;
 			background-color: white;
 			border: solid 1px $azul;
+
 			&.active {
 				background-color: $azul;
 			}
 		}
 	}
+
 	.carousel-inner {
 		.carousel-item {
 			.carousel-caption {
@@ -41,6 +51,7 @@
 				box-sizing: content-box;
 				position: initial;
 				margin-bottom: 15px;
+
 				h5 {
 					text-align: left;
 					text-transform: uppercase;
@@ -55,4 +66,77 @@
 	}
 
 
+}
+
+
+#carouselHome {
+	.carousel-indicators {
+		bottom: 0;
+		margin-bottom: 0;
+		margin: 0;
+
+		li {
+			flex: 1;
+		}
+	}
+
+
+
+	.carousel-inner {
+		.carousel-item {
+			.carousel-caption {
+				background: rgba(39, 42, 94, 0.8);
+				text-align: left;
+				color: white;
+				left: 0;
+				top: 0;
+				padding: 0;
+				bottom: 0;
+				width: 50%;
+				padding-top: 100px;
+				padding-left: 15%;
+				
+				img {
+					width: 50px;
+				}
+
+				h2 {
+					font-size: 40px; 
+					font-weight: 800;
+					margin-bottom: 10px;
+					max-width: 400px;
+				}
+
+				p {
+					font-size: 26px;
+					margin-bottom: 30px;
+					max-width: 400px;
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					right: -240px;
+					bottom: 0;
+					width: 0;
+					height: 0;
+					border-left: 240px solid rgba(39, 42, 94, 0.8);
+					border-top: 0px solid transparent;
+					border-bottom: 700px solid transparent;
+					height: 100%;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					right: -120px;
+					bottom: 0;
+					width: 20px;
+					background-color: #ffdc4a;
+					height: 100%;
+					transform: skewX(-20deg);
+				}
+			}
+		}
+	}
 }
