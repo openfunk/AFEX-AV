@@ -167,11 +167,6 @@ body {
 				height: 100%;
 				transform: skewX(-19deg);
 			}
-//			@media (min-width: 576px) {
-//				&:after {
-//					background-color: red;
-//				}
-//			}
 		}
 	}
 }
@@ -192,12 +187,7 @@ body {
 		&.active {
 			background: $amarillo;
 			color: white;
-
-			&:first-child {
-				&:before {
-					display: none;
-				}
-			}
+			overflow: inherit;
 
 			&:before {
 				content: "";
@@ -225,6 +215,9 @@ body {
 				border-top: solid 36px transparent;
 			}
 		}
+		&:last-child {
+			overflow: hidden!important;
+		}
 	}
 }
 
@@ -249,7 +242,7 @@ body {
 	background: white;
 }
 
-.accordion {
+.accordion_faq {
 	margin: 20px auto;
 	width: 80%;
 	max-width: 750px;

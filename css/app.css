@@ -140,9 +140,8 @@ body {
   overflow: hidden; }
   .special-bread .col.active {
     background: #ffdc4a;
-    color: white; }
-    .special-bread .col.active:first-child:before {
-      display: none; }
+    color: white;
+    overflow: inherit; }
     .special-bread .col.active:before {
       content: "";
       position: absolute;
@@ -165,6 +164,8 @@ body {
       border-left: solid 30px #ffdc4a;
       border-bottom: solid 38px transparent;
       border-top: solid 36px transparent; }
+  .special-bread .col:last-child {
+    overflow: hidden !important; }
 
 .ademas {
   background: #eaebef;
@@ -181,36 +182,36 @@ body {
   padding: 90px 0;
   background: white; }
 
-.accordion {
+.accordion_faq {
   margin: 20px auto;
   width: 80%;
   max-width: 750px;
   font-size: 18px;
   color: #272B5B; }
-  .accordion .card {
+  .accordion_faq .card {
     margin-bottom: 15px;
     -webkit-border-radius: 30px 0 30px 0 !important;
     border-radius: 30px 0 30px 0 !important;
     border: solid 1px #272B5B !important; }
-  .accordion .card-header {
+  .accordion_faq .card-header {
     background: transparent;
     border-bottom: none; }
-    .accordion .card-header h5,
-    .accordion .card-header a,
-    .accordion .card-header .btn-link {
+    .accordion_faq .card-header h5,
+    .accordion_faq .card-header a,
+    .accordion_faq .card-header .btn-link {
       color: #272B5B;
       font-size: 18px;
       font-weight: 800; }
-      .accordion .card-header h5:hover,
-      .accordion .card-header a:hover,
-      .accordion .card-header .btn-link:hover {
+      .accordion_faq .card-header h5:hover,
+      .accordion_faq .card-header a:hover,
+      .accordion_faq .card-header .btn-link:hover {
         text-decoration: none; }
-    .accordion .card-header .btn-link {
+    .accordion_faq .card-header .btn-link {
       display: block;
       width: 100%;
       text-align: left;
       padding: 0; }
-  .accordion .card-body {
+  .accordion_faq .card-body {
     margin-bottom: 15px;
     font-size: 18px;
     font-weight: 300; }
@@ -802,5 +803,123 @@ input {
       background-size: 20px;
       background-position: left center;
       background-repeat: no-repeat; }
+
+.destacado-p {
+  background: white;
+  border: solid 1px #272B5B;
+  padding: 40px;
+  -webkit-border-radius: 30px 0 30px 0;
+  border-radius: 30px 0 30px 0;
+  margin-bottom: 50px; }
+  .destacado-p p {
+    font-size: 20px;
+    color: #9093a7;
+    line-height: 27px;
+    font-weight: 300;
+    margin-bottom: 0 !important; }
+  .destacado-p h4 {
+    color: #272B5B;
+    margin-bottom: 20px; }
+  .destacado-p img {
+    width: 40px;
+    margin-right: 15px; }
+
+.intro-av {
+  color: #9093a7;
+  padding: 80px 0;
+  background: white; }
+  .intro-av h3 {
+    margin-bottom: 35px; }
+  .intro-av p {
+    margin-bottom: 40px; }
+
+.list-afex {
+  padding: 80px 0; }
+  .list-afex h2 {
+    color: #272B5B;
+    line-height: 35px;
+    font-weight: 800; }
+  .list-afex li {
+    list-style: none;
+    background-image: url("../img/group_717@2x.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    padding: 20px;
+    padding-left: 60px; }
+  .list-afex.servicios {
+    font-size: 23px;
+    color: #272B5B; }
+    .list-afex.servicios ul {
+      padding-left: 0; }
+    .list-afex.servicios a {
+      color: #2159f4;
+      text-decoration: underline; }
+    .list-afex.servicios h2 {
+      max-width: 450px;
+      margin-bottom: 80px; }
+
+.special-section {
+  padding: 80px 0; }
+  .special-section p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #272B5B; }
+  .special-section h2 {
+    color: #272B5B; }
+  .special-section .destacado-p {
+    margin-bottom: 0; }
+
+.afex-mision {
+  background: white;
+  color: #272B5B;
+  font-size: 20px; }
+  .afex-mision .text {
+    padding: 100px; }
+    .afex-mision .text h2 {
+      font-weight: 800; }
+    .afex-mision .text p {
+      margin-bottom: 30px; }
+  .afex-mision .wall-photo {
+    background-image: url(../img/pexels-photo-872957.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.afexley {
+  padding: 100px 0;
+  background: white; }
+
+.accordion_estados {
+  max-width: 550px;
+  margin: auto; }
+  .accordion_estados .anio {
+    color: #272B5B;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 15px; }
+    .accordion_estados .anio a {
+      color: #272a5e;
+      display: block; }
+    .accordion_estados .anio:hover {
+      color: #272B5B;
+      text-decoration: none; }
+  .accordion_estados .collapse a {
+    color: #9093a7;
+    font-size: 18px;
+    display: block;
+    padding: 10px 35px;
+    border: solid 1px #9093a7;
+    margin-bottom: 15px;
+    background-image: url("../img/group_833@2x.png");
+    background-color: white;
+    background-position: 2% center;
+    background-repeat: no-repeat;
+    background-size: 10px; }
+    .accordion_estados .collapse a:hover {
+      color: white;
+      text-decoration: none;
+      background-color: #272B5B;
+      background-image: url("../img/group_750@2x abajo.png"); }
 
 /*# sourceMappingURL=app.css.map */
