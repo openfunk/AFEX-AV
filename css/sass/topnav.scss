@@ -13,9 +13,13 @@
 
 	.container {
 		display: flex;
+
 		.navbar-brand {
+			padding-top: .7rem;
+			padding-bottom: .7rem;
+
 			img {
-				width: 200px;
+				width: 160px;
 			}
 		}
 	}
@@ -23,9 +27,30 @@
 	.navup {
 		background: $azul;
 		color: white;
+
 		.row {
 			flex: 1;
+
+			@media only screen and (max-width: 1024px) {
+
+				.acceso,
+				.infotop {
+					display: flex;
+
+					a {
+						display: flex;
+						flex: 1;
+						text-align: center;
+						font-size: 10px;
+						margin-right: 0!important;
+						padding: 5px!important;
+						display: block;
+						text-align: center;
+					}
+				}
+			}
 		}
+
 		a {
 			color: white;
 			font-size: 15px;
@@ -33,46 +58,90 @@
 			vertical-align: middle;
 			text-decoration: none;
 		}
+
 		.container {
 			.infotop {
 				text-align: left;
+
 				a {
+					-webkit-transition: all 0.4s ease-out 0s;
+					-moz-transition: all 0.4s ease-out 0s;
+					-ms-transition: all 0.4s ease-out 0s;
+					-o-transition: all 0.4s ease-out 0s;
+					transition: all 0.4s ease-out 0s;
 					padding: 12px 0px;
 					margin-right: 30px;
+					opacity: 1;
+
+					&:hover {
+						opacity: .5;
+					}
 				}
 			}
+
 			.acceso {
 				text-align: right;
+
 				> a {
 					font-weight: bold;
 					text-decoration: none;
 					text-transform: uppercase;
 					padding: 12px 20px;
 					display: inline-block;
+					-webkit-transition: all 0.4s ease-out 0s;
+					-moz-transition: all 0.4s ease-out 0s;
+					-ms-transition: all 0.4s ease-out 0s;
+					-o-transition: all 0.4s ease-out 0s;
+					transition: all 0.4s ease-out 0s;
 				}
+
 				.ingresar {
 					background: $amarillo;
+
+					&:hover {
+						background: #9093a7;
+					}
 				}
+
 				.registrar {
 					background: #9093a7;
+
+					&:hover {
+						background: $amarillo;
+					}
 				}
 			}
 		}
 	}
+
 	.navbot {
 		background: white;
+
+		@media only screen and (max-width: 1024px) {
+			.container {
+				justify-content: center;
+			}
+		}
+
 		a {
 			color: #8E91A2;
+			letter-spacing: 0.2px;
+
 			&:hover {
 				color: $azul;
 			}
 		}
+
 		.navbar-collapse {
 			justify-content: flex-end;
 		}
 	}
+
 	.navbar-nav {
 		.nav-link {
+			padding-right: .9rem;
+			padding-left: .9rem;
+
 			&.active {
 				color: $azul;
 			}
@@ -88,11 +157,16 @@
 	background-clip: border-box;
 	-webkit-box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.1);
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	top: 130%;
 
 	.dropdown-item {
-		color: #272a5e!important;
+		color: #272a5e !important;
 		border-bottom: solid 1px rgba(0, 0, 0, 0.1);
 		padding: .5rem 1.5rem;
+
 		&:last-child {
 			border-bottom: none;
 		}
@@ -102,4 +176,37 @@
 // Con esto puedes hacer que la flecha aparezca o desaparezca.
 .dropdown-toggle::after {
 	display: none;
+}
+
+
+
+.nav-item {
+	-webkit-transition: all 0.4s ease-out 0s;
+	-moz-transition: all 0.4s ease-out 0s;
+	-ms-transition: all 0.4s ease-out 0s;
+	-o-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+
+	&.dropdown {
+		-webkit-transition: all 0.4s ease-out 0s;
+		-moz-transition: all 0.4s ease-out 0s;
+		-ms-transition: all 0.4s ease-out 0s;
+		-o-transition: all 0.4s ease-out 0s;
+		transition: all 0.4s ease-out 0s;
+
+		&:hover {
+			.dropdown-menu {
+				-webkit-transition: all 0.4s ease-out 0s;
+				-moz-transition: all 0.4s ease-out 0s;
+				-ms-transition: all 0.4s ease-out 0s;
+				-o-transition: all 0.4s ease-out 0s;
+				transition: all 0.4s ease-out 0s;
+				top: 100%;
+				opacity: 1;
+				visibility: visible;
+			}
+
+		}
+
+	}
 }

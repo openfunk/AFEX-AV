@@ -5,7 +5,10 @@ body {
 	background: #EAEBEF;
 	font-size: 15px;
 	font-family: 'Poppins', sans-serif;
-	padding-top: 138px;
+	padding-top: 134px;
+	@media only screen and (max-width: 1024px) {
+		padding-top: 152px;
+	}
 }
 
 .boton-yellow {
@@ -76,7 +79,7 @@ body {
 		position: absolute;
 		width: 500px;
 		height: 500px;
-		background-color: #ffe54a;
+		background-color: $amarillo;
 		transform: rotate(135deg);
 		top: 30px;
 		left: -300px;
@@ -101,6 +104,20 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
+	
+	
+	@media only screen and (max-width: 1024px) {
+		text-align: center;
+		padding: 80px 0;
+		.container {
+			padding-left: 0;
+		}
+		.rectangulo-giro {
+			display: none;
+		}
+	}
+	
 }
 
 
@@ -141,9 +158,9 @@ body {
 			background-color: rgba(39, 42, 94, 0.8);
 			position: relative;
 
-			h1, h3, p {
-				max-width: 450px;
-			}
+			//			h1, h3, p {
+			//				max-width: 450px;
+			//			}
 			&:before {
 				content: "";
 				position: absolute;
@@ -162,7 +179,7 @@ body {
 				position: absolute;
 				right: -100px;
 				bottom: 0;
-				width: 30px;
+				width: 20px;
 				background-color: #ffdc4a;
 				height: 100%;
 				transform: skewX(-19deg);
@@ -183,6 +200,8 @@ body {
 		position: relative;
 		font-weight: 700;
 		overflow: hidden;
+
+
 
 		&.active {
 			background: $amarillo;
@@ -215,8 +234,15 @@ body {
 				border-top: solid 36px transparent;
 			}
 		}
+
 		&:last-child {
-			overflow: hidden!important;
+			overflow: hidden !important;
+		}
+
+		&:first-child {
+			&:before {
+				display: none;
+			}
 		}
 	}
 }
@@ -284,5 +310,35 @@ body {
 		margin-bottom: 15px;
 		font-size: 18px;
 		font-weight: 300;
+	}
+}
+
+.compartir {
+	img {
+		width: 15px !important;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0 !important;
+		margin-right: 5px;
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+
+		i {
+			color: $azul;
+			font-size: 20px;
+			margin-left: 5px;
+
+			&:hover {
+				opacity: .5;
+			}
+		}
 	}
 }

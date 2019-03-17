@@ -15,7 +15,8 @@
 		border: none;
 
 		&:hover {
-			background: $azul;
+			background: linear-gradient(to right, rgba(39, 43, 91, 0.7) 0%, rgba(39, 43, 91, 0.7) 100%), url('../img/pexels-photo-886465.jpeg');
+			background-size: cover;
 			color: white;
 
 			-webkit-transition: all 0.3s ease;
@@ -47,6 +48,11 @@
 				}
 			}
 
+			.boton-yellow {
+				opacity: 1;
+				visibility: visible;
+			}
+
 		}
 
 		.icon-card {
@@ -54,7 +60,7 @@
 			top: -50px;
 			background: $azul;
 			color: white;
-			padding: 30px;
+			padding: 15px;
 
 			left: 50%;
 			margin-left: -50px;
@@ -68,7 +74,7 @@
 
 
 			img {
-				width: 50px;
+				width: 80px;
 			}
 
 			.encima {
@@ -81,8 +87,8 @@
 		}
 
 		.card-body {
-			padding-top: 60px;
-			padding-bottom: 60px;
+			padding-top: 75px;
+			padding-bottom: 30px;
 
 			h3 {
 				font-size: 23px;
@@ -97,6 +103,8 @@
 		}
 
 		.boton-yellow {
+			opacity: 0;
+			visibility: hidden;
 			position: absolute;
 			left: 50%;
 			margin-left: -50px;
@@ -128,6 +136,11 @@
 		}
 
 		.item-eleg-text {
+			h3 {
+				font-weight: 800;
+				font-size: 23px;
+			}
+
 			flex-grow: 1;
 		}
 	}
@@ -137,7 +150,7 @@
 		height: 0;
 		border-left: 250px solid transparent;
 		border-right: 50px solid transparent;
-		border-bottom: 300px solid #ffdc4a;
+		border-bottom: 300px solid $amarillo;
 		position: absolute;
 		bottom: 0;
 		right: -5%;
@@ -148,11 +161,41 @@
 		height: 0;
 		border-left: 550px solid transparent;
 		border-right: 50px solid transparent;
-		border-top: 600px solid #ffdc4a;
+		border-top: 600px solid $amarillo;
 		position: absolute;
 		top: 0;
-		right: -5%;
+		right: -14%;
+	}
 
+	@media only screen and (max-width: 1024px) {
+		padding-top: 60px;
+		padding-bottom: 80px;
+		#triangle-up,
+		#triangle-down {
+			display: none;
+		}
+
+		h1 {
+			font-size: 25px;
+			margin-bottom: 35px;
+		}
+
+		.item-eleg {
+			margin-bottom: 20px;
+			img {
+				width: 20px;
+			}
+
+			.item-eleg-text {
+				h3 {
+					font-size: 20px;
+				}
+			}
+
+			p {
+				display: none;
+			}
+		}
 	}
 
 
@@ -163,23 +206,39 @@
 	color: #9396A7;
 	padding-bottom: 80px;
 
+	@media (max-width: 992px) {
+		.for-text {
+			float: none !important;
+			max-width: none !important;
+			padding: 45px 15px !important;
+		}
+	}
+
 	.for-text {
 		float: right;
-		max-width: 500px;
+		max-width: 550px;
+	}
+
+	p {
+		font-size: 20px;
+		color: $azul;
+		margin-bottom: 30px;
+		font-weight: 300;
+		line-height: 27px;
 	}
 
 	h3 {
 		color: $azul;
 		font-size: 35px;
 		font-weight: 700;
-		margin-bottom: 30px;
 	}
 
-	h3 + p {
-		font-size: 20px;
-		color: $azul;
-		font-weight: 300;
+	img {
+		margin-bottom: 30px;
+		width: 30px;
 	}
+
+
 }
 
 
@@ -193,10 +252,10 @@
 		border-radius: 15px 0 15px 0;
 		color: $azul;
 		-webkit-transition: all 0.3s ease;
-			-moz-transition: all 0.3s ease;
-			-ms-transition: all 0.3s ease;
-			-o-transition: all 0.3s ease;
-			transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
 
 		img {
 			max-width: 100%;
@@ -220,7 +279,7 @@
 			background: $azul;
 			padding: 10px 1.25rem;
 			font-size: 11px;
-			font-weight: 300;
+			font-weight: 800;
 
 		}
 
@@ -270,6 +329,7 @@
 		border-radius: 15px 0 15px 0;
 		min-width: 250px;
 		margin-bottom: 50px;
+		border: none;
 		-webkit-transition: all 0.3s ease;
 		-moz-transition: all 0.3s ease;
 		-ms-transition: all 0.3s ease;
@@ -280,14 +340,18 @@
 		.card-img-top {
 			border-top-left-radius: 15px;
 			border-top-right-radius: 0;
+			position: relative;
 		}
 
 		.card-date {
 			color: white;
-			background: $azul;
+			background-image: linear-gradient(to right, #272a5e, rgba(39, 42, 94, 0.86) 66%, rgba(39, 42, 94, 0.28));
 			padding: 10px 1.25rem;
 			font-size: 11px;
-			font-weight: 300;
+			font-weight: 800;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
 		}
 
 		.card-body {
@@ -320,7 +384,7 @@
 			transition: all 0.3s ease;
 
 			.card-date {
-				background: $amarillo;
+				background-image: linear-gradient(to right, #ffdc4a, rgba(255, 220, 74, 0.66) 66%, rgba(255, 220, 74, 0.65));
 			}
 
 			.card-body {
@@ -332,10 +396,12 @@
 			}
 		}
 	}
+
 	.feed-news {
 		display: flex;
 		-webkit-flex-flow: row wrap;
 		justify-content: space-between;
+
 		.card {
 			width: 30%;
 		}
@@ -355,6 +421,10 @@ footer {
 
 	> div {
 		padding: 50px 0;
+
+		@media only screen and (max-width: 1024px) {
+			padding: 30px;
+		}
 	}
 
 	a {
@@ -374,6 +444,17 @@ footer {
 		.row {
 			max-width: 810px;
 
+			@media only screen and (max-width: 1024px) {
+				ul {
+					padding-left: 0;
+				}
+
+				li {
+					font-size: 10px;
+				}
+
+			}
+
 			li {
 				list-style: none;
 				background-image: url("../img/blue-arrow.png");
@@ -381,6 +462,8 @@ footer {
 				background-repeat: no-repeat;
 				background-size: 10px;
 				padding-left: 15px;
+
+
 			}
 		}
 	}
@@ -389,6 +472,18 @@ footer {
 		background: #9093a7;
 		padding-right: 0;
 		color: white;
+
+		@media only screen and (max-width: 1024px) {
+			font-size: 12px;
+			display: flex;
+			justify-content: space-between;
+			padding-right: 15px;
+
+			ul {
+				padding-left: 0;
+				margin-bottom: 0;
+			}
+		}
 
 		ul {
 			list-style: none;
@@ -402,6 +497,15 @@ footer {
 			font-size: 37px;
 			margin-left: 40px;
 			color: $azul;
+			-webkit-transition: all 0.4s ease-out 0s;
+			-moz-transition: all 0.4s ease-out 0s;
+			-ms-transition: all 0.4s ease-out 0s;
+			-o-transition: all 0.4s ease-out 0s;
+			transition: all 0.4s ease-out 0s;
+
+			&:hover {
+				color: white;
+			}
 		}
 
 		.fas {
@@ -417,12 +521,18 @@ footer {
 	padding: 15px;
 	font-weight: 300;
 
+	@media only screen and (max-width: 1024px) {
+		text-align: center;
+	}
+
 	a {
 		text-transform: uppercase;
 		color: $amarillo;
 		font-weight: 700;
 		text-decoration: underline;
+
 	}
+
 }
 
 .after-footer {
@@ -443,10 +553,16 @@ footer {
 		font-size: 10px;
 		color: $azul;
 		font-weight: 300;
+		text-align: right;
 
 		a {
 			text-decoration: underline;
 			color: $azul;
+		}
+
+		@media only screen and (max-width: 1024px) {
+			text-align: left;
+			margin-top: 15px;
 		}
 	}
 }
@@ -473,6 +589,7 @@ footer {
 	.contacto {
 		padding-right: 0;
 		color: $azul;
+		padding-top: 100px;
 		font-size: 15px;
 		font-weight: 300;
 
@@ -494,8 +611,12 @@ footer {
 
 		.fab {
 			font-size: 37px;
-			margin-left: 40px;
+			margin-left: 0px;
 			color: $azul;
+
+			&:hover {
+				opacity: .5;
+			}
 		}
 
 		.fas {
@@ -521,6 +642,11 @@ footer {
 		padding: 8px 40px;
 		display: block;
 		margin-bottom: 20px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
 
 		&:hover {
 			background-color: $azul;

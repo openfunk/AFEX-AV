@@ -26,15 +26,18 @@
 }
 
 .intro-av {
-	color: #9093a7;
+	color: $azul;
 	padding: 80px 0;
 	background: white;
 
 	h3 {
 		margin-bottom: 35px;
+		font-size: 25px;
+		line-height: 37px;
 	}
 
 	p {
+		font-size: 18px;
 		margin-bottom: 40px;
 	}
 }
@@ -56,7 +59,8 @@
 		background-size: 40px;
 		padding: 20px;
 		padding-left: 60px;
-
+		color: $azul;
+		font-size: 20px;
 	}
 
 	&.servicios {
@@ -91,6 +95,7 @@
 
 	h2 {
 		color: $azul;
+		font-weight: 800;
 	}
 
 	.destacado-p {
@@ -133,43 +138,117 @@
 	margin: auto;
 
 	.anio {
-		color: $azul;
-		font-weight: 800;
-		font-size: 30px;
-		padding: 15px;
-
-		a {
+		h5 {
 			color: #272a5e;
 			display: block;
+			cursor: pointer;
+			color: $azul;
+			font-weight: 800;
+			font-size: 30px;
+			padding: 15px;
+
+			.minus {
+				float: right;
+				display: inline-block;
+			}
+
+			.plus {
+				float: right;
+				display: none;
+			}
+
+			&.collapsed {
+				.minus {
+					display: none;
+				}
+
+				.plus {
+					display: inline-block;
+				}
+			}
 		}
 
 		&:hover {
 			color: $azul;
-			text-decoration: none;
 		}
 	}
 
-	.collapse {
-		a {
-			color: #9093a7;
-			font-size: 18px;
-			display: block;
-			padding: 10px 35px;
-			border: solid 1px #9093a7;
-			margin-bottom: 15px;
+	a {
+		color: #9093a7;
+		font-size: 18px;
+		display: block;
+		padding: 10px 35px;
+		border: solid 1px #9093a7;
+		margin-bottom: 15px;
 
-			background-image: url("../img/group_833@2x.png");
-			background-color: white;
-			background-position: 2% center;
-			background-repeat: no-repeat;
-			background-size: 10px;
-			
-			&:hover {
-				color: white;
-				text-decoration: none;
-				background-color: $azul;
-				background-image: url("../img/group_750@2x abajo.png");
-			}
+		background-image: url("../img/group_833@2x.png");
+		background-color: white;
+		background-position: 2% center;
+		background-repeat: no-repeat;
+		background-size: 10px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: white;
+			text-decoration: none;
+			background-color: $azul;
+			background-image: url("../img/group_750@2x abajo.png");
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
 		}
+	}
+
+	.collapse {}
+}
+
+
+.links-download-av {
+	margin-right: 35px;
+	position: relative;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	&:hover {
+		text-decoration: none;
+
+		span {
+			background: $azul;
+			color: white;
+		}
+	}
+
+	img {
+		background: $azul;
+		width: 72px;
+		padding: 20px 24px;
+		position: absolute;
+		left: 0;
+		top: -13px;
+	}
+
+	span {
+		-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+		text-decoration: none;
+		color: $azul;
+		border: solid 1px $azul;
+		padding: 14px 20px;
+		padding-left: 90px;
+		font-weight: 400;
+		background: white;
+		font-size: 16px;
 	}
 }
