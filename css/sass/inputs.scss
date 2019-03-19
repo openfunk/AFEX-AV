@@ -23,6 +23,7 @@ select {
 
 
 form {
+	padding-right: 45px;
 	p {
 		font-size: 18px;
 		color: #9093a7;
@@ -72,6 +73,7 @@ form {
 	input[type="radio"] {
 		position: absolute;
 		opacity: 0;
+		max-width: 255px;
 
 		+ .radio-label {
 			&:before {

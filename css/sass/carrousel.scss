@@ -100,6 +100,7 @@
 					margin: 0;
 					font-size: 24px;
 					font-weight: 700;
+					margin-bottom: 15px;
 					//					padding: 0;
 				}
 
@@ -129,9 +130,11 @@
 	}
 
 	.boton-yellow {
-		background-color: transparent;
-		color: $amarillo;
-		border: solid 1px $amarillo;
+		&:hover {
+			background-color: transparent;
+			color: $amarillo;
+			border: solid 1px $amarillo;
+		}
 	}
 
 

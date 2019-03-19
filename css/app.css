@@ -17,7 +17,8 @@ body {
   border-radius: 50px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
-  font-weight: 700; }
+  font-weight: 700;
+  border: solid 1px #FFC74A; }
   .boton-yellow:hover {
     text-decoration: none;
     color: white;
@@ -43,6 +44,11 @@ body {
     color: white; }
   .breadcrumb a {
     color: white; }
+  .breadcrumb.azul {
+    margin-bottom: 60px;
+    margin-top: -30px; }
+    .breadcrumb.azul li, .breadcrumb.azul a {
+      color: #272B5B; }
 
 .parallax {
   background-image: url("../img/para.jpg");
@@ -129,9 +135,9 @@ body {
     .hero-area .row .hero-text:after {
       content: "";
       position: absolute;
-      right: -100px;
+      right: -92px;
       bottom: 0;
-      width: 20px;
+      width: 15px;
       background-color: #ffdc4a;
       height: 100%;
       transform: skewX(-19deg); }
@@ -315,7 +321,8 @@ body {
       color: white;
       margin: 0;
       font-size: 24px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 15px; }
 
 #carouselHome .carousel-indicators {
   bottom: -10px;
@@ -326,7 +333,7 @@ body {
     background: #9093a7;
     height: 10px; }
 
-#carouselHome .boton-yellow {
+#carouselHome .boton-yellow:hover {
   background-color: transparent;
   color: #FFC74A;
   border: solid 1px #FFC74A; }
@@ -559,7 +566,8 @@ body {
       padding: 45px 15px !important; } }
   #servicios-home .for-text {
     float: right;
-    max-width: 550px; }
+    max-width: 550px;
+    padding-right: 15%; }
   #servicios-home p {
     font-size: 20px;
     color: #272B5B;
@@ -1047,42 +1055,40 @@ select {
   height: 40px;
   border-radius: 0; }
 
-form p {
-  font-size: 18px;
-  color: #9093a7;
-  margin-bottom: 0; }
-
-form h6 {
-  color: #272a5e;
-  font-weight: 500;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  width: 100%; }
-
-form input {
-  margin-bottom: 20px; }
-
-form .col {
-  padding-left: 0;
-  padding-right: 0; }
-
-form .enviar {
-  text-align: right; }
-  form .enviar span {
-    display: block;
-    color: red;
-    font-size: 12px;
-    margin-bottom: 25px;
-    margin-top: 30px; }
-
-form .col + .col {
-  padding-left: 15px; }
+form {
+  padding-right: 45px; }
+  form p {
+    font-size: 18px;
+    color: #9093a7;
+    margin-bottom: 0; }
+  form h6 {
+    color: #272a5e;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%; }
+  form input {
+    margin-bottom: 20px; }
+  form .col {
+    padding-left: 0;
+    padding-right: 0; }
+  form .enviar {
+    text-align: right; }
+    form .enviar span {
+      display: block;
+      color: red;
+      font-size: 12px;
+      margin-bottom: 25px;
+      margin-top: 30px; }
+  form .col + .col {
+    padding-left: 15px; }
 
 .radio {
   flex: 1; }
   .radio input[type="radio"] {
     position: absolute;
-    opacity: 0; }
+    opacity: 0;
+    max-width: 255px; }
     .radio input[type="radio"] + .radio-label:before {
       content: '';
       background: #f4f4f4;
@@ -1141,9 +1147,10 @@ form .col + .col {
     list-style: none; }
     .puedes-producto ul li {
       margin-bottom: 15px;
-      padding-left: 1.8em;
+      padding: 5px;
+      padding-left: 2.5rem;
       background-image: url("../img/amarillo-lista.png");
-      background-size: 20px;
+      background-size: 30px;
       background-position: left center;
       background-repeat: no-repeat; }
 
