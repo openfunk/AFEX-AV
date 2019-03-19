@@ -47,7 +47,8 @@ body {
   .breadcrumb.azul {
     margin-bottom: 60px;
     margin-top: -30px; }
-    .breadcrumb.azul li, .breadcrumb.azul a {
+    .breadcrumb.azul li,
+    .breadcrumb.azul a {
       color: #272B5B; }
 
 .parallax {
@@ -121,6 +122,11 @@ body {
     padding-right: 60px;
     background-color: rgba(39, 42, 94, 0.8);
     position: relative; }
+    @media only screen and (max-width: 1020px) {
+      .hero-area .row .hero-text {
+        padding: 10%; }
+        .hero-area .row .hero-text:before, .hero-area .row .hero-text:after {
+          display: none; } }
     .hero-area .row .hero-text:before {
       content: "";
       position: absolute;
@@ -432,6 +438,10 @@ body {
 
 #features {
   padding: 150px 0; }
+  @media only screen and (max-width: 1024px) {
+    #features {
+      padding-top: 100px;
+      padding-bottom: 20px; } }
   #features a:hover {
     text-decoration: none; }
   #features .card {
@@ -439,6 +449,9 @@ body {
     border-radius: 15px 0 15px 0;
     background: white;
     border: none; }
+    @media only screen and (max-width: 1024px) {
+      #features .card {
+        margin-bottom: 80px; } }
     #features .card:hover {
       background: linear-gradient(to right, rgba(39, 43, 91, 0.7) 0%, rgba(39, 43, 91, 0.7) 100%), url("../img/pexels-photo-886465.jpeg");
       background-size: cover;
