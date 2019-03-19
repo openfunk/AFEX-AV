@@ -40,6 +40,12 @@ body {
 	color: $amarillo;
 }
 
+@media only screen and (max-width: 1020px) {
+	ul {
+		padding-left: 0;
+	}
+}
+
 .breadcrumb {
 	padding: 0;
 	margin-bottom: 1rem;
@@ -213,6 +219,20 @@ body {
 }
 
 .special-bread {
+	@media only screen and (max-width: 1020px) {
+		> div {
+			display: none;
+		}
+
+		select {
+			display: block !important;
+		}
+	}
+
+	select {
+		display: none;
+	}
+
 	.col {
 		background: #eaebef;
 		color: $azul;
